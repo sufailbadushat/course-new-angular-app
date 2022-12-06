@@ -8,6 +8,13 @@ import { ApiService } from '../api.service';
 })
 export class ViewCourseComponent {
 
-  
-  data:any={}
+  constructor(private api: ApiService) {
+    api.fetchCourse().subscribe(
+      (response) => {
+          this.data=response
+      }
+    )
+  }
+
+  data: any = []
 }

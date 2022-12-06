@@ -19,13 +19,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr *ngFor="let i of data">
                                          
-                        <td>Java</td>
-                        <td>Backend</td>
-                        <td>three months</td>
-                        <td>2020-12-01</td>
-                        <td>Online</td>
+                        <td>{{i.title}}</td>
+                        <td>{{i.description}}</td>
+                        <td>{{i.duration}}</td>
+                        <td>{{i.venue}}</td>
+                        <td>{{i.date}}</td>
 
                     </tr>
                    
