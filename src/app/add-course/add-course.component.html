@@ -11,32 +11,32 @@
                 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Course Title</label>
-                    <input type="text" placeholder="course title" class="form-control">
+                    <input name="title" [(ngModel)]="title" type="text" placeholder="course title" class="form-control">
                 </div>
                 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form-label font-monospace">Description</label>
-                    <textarea placeholder="course description" class="form-control" id="" cols="30" rows="4"></textarea>
+                    <textarea name="description" [(ngModel)]="description" placeholder="course description" class="form-control" id="" cols="30" rows="4"></textarea>
                 </div>
 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Duration</label>
-                    <input type="text"  placeholder="duration" class="form-control">
+                    <input name="duration" [(ngModel)]="duration" type="text"  placeholder="duration" class="form-control">
                 </div>
                 
                
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Venue</label>
-                    <input type="text" placeholder="venue" class="form-control">
+                    <input name="venue" [(ngModel)]="venue" type="text" placeholder="venue" class="form-control">
                 </div>
 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form-label font-monospace">Date</label>
-                    <input type="date" placeholder="date" class="form-control">
+                    <input name="date" [(ngModel)]="date" type="date" placeholder="date" class="form-control">
                 </div>
                 
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
-                    <button class="btn btn-dark font-monospace py-1">Submit</button>
+                    <button (click)="readValue()" class="btn btn-dark font-monospace py-1">Submit</button>
                 </div>
             </div>
         </div>
